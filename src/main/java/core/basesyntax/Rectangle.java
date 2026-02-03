@@ -24,14 +24,16 @@ public class Rectangle extends Figure {
         this.sideB = sideB;
     }
 
-    public void draw() {
-        int area = sideA * sideB;
+    public double getArea() {
+        return sideA * sideB;
+    }
 
+    public void draw() {
         StringBuilder builder = new StringBuilder("Figure: ");
         builder.append(getName())
                 .append(", ")
                 .append("area: ")
-                .append(area)
+                .append(getArea())
                 .append("sq. units, ")
                 .append("sideA: ")
                 .append(sideA)

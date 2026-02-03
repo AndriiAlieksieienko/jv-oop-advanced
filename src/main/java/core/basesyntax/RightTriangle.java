@@ -24,14 +24,16 @@ public class RightTriangle extends Figure {
         this.secondLeg = secondLeg;
     }
 
-    public void draw() {
-        double area = (double) (firstLeg * secondLeg) / 2;
+    public double getArea() {
+        return (double) (firstLeg * secondLeg) / 2;
+    }
 
+    public void draw() {
         StringBuilder builder = new StringBuilder("Figure: ");
         builder.append(getName())
                 .append(", ")
                 .append("area: ")
-                .append(area)
+                .append(getArea())
                 .append("sq. units, ")
                 .append("firstLeg: ")
                 .append(firstLeg)

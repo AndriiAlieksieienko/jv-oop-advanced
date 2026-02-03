@@ -4,13 +4,8 @@ package core.basesyntax;
  * Feel free to remove this class and create your own.
  */
 public class Main {
-    private static FigureSupplier figureSupplier = new FigureSupplier();
-
-    public static FigureSupplier getFigureSupplier() {
-        return figureSupplier;
-    }
-
     public static void main(String[] args) {
+        FigureSupplier figureSupplier = new FigureSupplier();
         Drawable[] figures = new Figure[6];
 
         for (int i = 0; i < figures.length; i++) {

@@ -10,6 +10,7 @@ public class IsoscelesTrapezoid extends Figure {
         setName(Figures.ISOSCELES_TRAPEZOID.name());
         this.sideA = sideA;
         this.sideB = sideB;
+        this.height = height;
     }
 
     public int getSideB() {
@@ -30,14 +31,16 @@ public class IsoscelesTrapezoid extends Figure {
         this.height = height;
     }
 
-    public void draw() {
-        double area = (double) ((sideA + sideB) / 2) * height;
+    public double getArea() {
+        return (double) ((sideA + sideB) / 2) * height;
+    }
 
+    public void draw() {
         StringBuilder builder = new StringBuilder("Figure: ");
         builder.append(getName())
                 .append(", ")
                 .append("area: ")
-                .append(area)
+                .append(getArea())
                 .append("sq. units, ")
                 .append("sideA: ")
                 .append(sideA)

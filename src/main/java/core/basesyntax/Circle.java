@@ -17,14 +17,16 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
-    public void draw() {
-        double area = Math.PI * radius * radius;
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
 
+    public void draw() {
         StringBuilder builder = new StringBuilder("Figure: ");
         builder.append(getName())
                 .append(", ")
                 .append("area: ")
-                .append(area)
+                .append(getArea())
                 .append("sq. units, ")
                 .append("radius: ")
                 .append(radius)

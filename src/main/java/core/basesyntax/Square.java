@@ -17,14 +17,16 @@ public class Square extends Figure {
         this.side = side;
     }
 
-    public void draw() {
-        int area = side * side;
+    public double getArea() {
+        return side * side;
+    }
 
+    public void draw() {
         StringBuilder builder = new StringBuilder("Figure: ");
         builder.append(getName())
                 .append(", ")
                 .append("area: ")
-                .append(area)
+                .append(getArea())
                 .append("sq. units, ")
                 .append("side: ")
                 .append(side)

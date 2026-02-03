@@ -4,6 +4,8 @@ public abstract class Figure implements Drawable {
     private String name;
     private String color;
 
+    abstract double getArea();
+
     public String getName() {
         return name;
     }
