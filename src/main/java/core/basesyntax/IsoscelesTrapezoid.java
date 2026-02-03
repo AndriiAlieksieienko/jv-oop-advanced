@@ -32,7 +32,7 @@ public class IsoscelesTrapezoid extends Figure {
     }
 
     public double getArea() {
-        return (double) ((sideA + sideB) / 2) * height;
+        return ((sideA + sideB) / 2.0) * height;
     }
 
     public void draw() {
